@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+
+        />
+
+    <TextView
+        android:id="@+id/tvUserPhNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone No"
+        app:layout_constraintTop_toBottomOf="@id/tvUserName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+
+        />
+    <TextView
+        android:id="@+id/tvUserEmailId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Id"
+        app:layout_constraintTop_toBottomOf="@id/tvUserPhNo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+
+        />
+
+    <android.widget.Button
+        android:id="@+id/btnUserDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvUserEmailId"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="20dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

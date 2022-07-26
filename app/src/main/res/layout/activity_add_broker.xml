@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddBroker">
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Broker Details"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <EditText
+        style="@style/edSignUpStyle"
+        android:id="@+id/edFirstName"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="First Name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSignUp"
+        android:background="@drawable/edit_text_design"
+        />
+
+    <EditText
+        style="@style/edSignUpStyle"
+        android:id="@+id/edLastName"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edFirstName"
+        android:background="@drawable/edit_text_design"
+        />
+
+    <EditText
+        style="@style/edSignUpStyle"
+        android:id="@+id/edContactNo"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Phone No"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edLastName"
+        android:background="@drawable/edit_text_design"
+        />
+
+    <EditText
+        style="@style/edSignUpStyle"
+        android:id="@+id/edEmailId"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email Id"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edContactNo"
+        android:background="@drawable/edit_text_design"
+        />
+
+    <EditText
+        style="@style/edSignUpStyle"
+        android:id="@+id/edExp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Experience"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edEmailId"
+        android:background="@drawable/edit_text_design"
+        />
+
+    <android.widget.Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnRegister"
+        app:layout_constraintTop_toBottomOf="@id/edExp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20sp"
+        android:textAllCaps="false"
+        android:text="Register Broker"
+        android:textColor="@drawable/button_text_color"
+        android:background="@drawable/button_selector"
+        />
+    <android.widget.Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnCancelBroker"
+        app:layout_constraintTop_toBottomOf="@id/btnRegister"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="20sp"
+        android:textAllCaps="false"
+        android:text="Cancel"
+        android:textColor="@drawable/button_text_color"
+        android:background="@drawable/button_selector"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
